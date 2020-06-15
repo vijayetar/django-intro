@@ -1,0 +1,31 @@
+<!-- this is the base template for the different pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% block title %}
+  <title>Base</title>
+  {% endblock title %}
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href = "{% url 'home' %}">Home</a>
+        </li>
+        <li><a href = "{% url 'doggy_home' %}">Doggy Home Page</a>
+        </li>
+        <li><a href = "{% url 'cat_home' %}">Cat Home Page</a>
+        </li>
+        <li><a href = "{% url 'about' %}">Team</a></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
+  {% block content %}
+  <h1>Why am I here? </h1>
+  {% endblock content %}
+</body>
+</html>
