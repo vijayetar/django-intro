@@ -1,9 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block link_css%}
+<link rel='stylesheet' href='{% static "css/base.css" %}'>
+<link rel='stylesheet' href='{% static "css/dogs.css" %}'>
+{% endblock link_css%}
 
 {% block title %}
   <title>Dogs</title>
 {% endblock title %}
 
+{% block img_header %}
+<img src = 'https://images.unsplash.com/photo-1525253086316-d0c936c814f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'>
+{% endblock img_header %}
+
+{% block h1%}
+    <h1>Dog and Puppies Adoption</h1>
+{% endblock h1%}
+
 {% block content %}
-  <h1>This is Dog Adoption page! </h1>
+  <p>This is Dog Adoption page! </p>
 {% endblock content %}

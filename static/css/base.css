@@ -1,0 +1,25 @@
+body{
+  background-color: rgb(241, 221, 248);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+  width: 150px;
+  float: left;
+  margin: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 15px;
+}
+a{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+
+}
+
