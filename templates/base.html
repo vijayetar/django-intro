@@ -1,16 +1,26 @@
 <!-- this is the base template for the different pages -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% block img_header %}
+  <img src = 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'>
+  {% endblock img_header %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   {% block title %}
   <title>Base</title>
   {% endblock title %}
+  {% block link_css%}
+  <link rel='stylesheet' href='{% static "css/base.css" %}'>
+  {% endblock link_css%}
 </head>
 <body>
   <header>
+    {% block h1%}
+    <h1>title of the page</h1>
+    {% endblock h1%}
     <nav>
       <ul>
         <li><a href = "{% url 'home' %}">Home</a>
@@ -25,7 +35,7 @@
     </nav>
   </header>
   {% block content %}
-  <h1>Why am I here? </h1>
+  <p>Why am I here? </p>
   {% endblock content %}
 </body>
 </html>
